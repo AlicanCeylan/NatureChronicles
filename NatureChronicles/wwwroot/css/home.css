@@ -1,0 +1,8 @@
+﻿.my-column{
+    border: dashed red;
+}
+
+.my-container{
+    margin-top: 40px;
+    justify-content: center;
+}
