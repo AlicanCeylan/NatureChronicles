@@ -1,8 +1,14 @@
-﻿.my-column{
+﻿.my-column {
     border: dashed red;
+    background: ;
 }
 
 .my-container{
-    margin-top: 40px;
+    margin-top: 80px;
     justify-content: center;
+}
+
+.weather-row{
+    margin-top: 50px;
+    border: solid green;
 }

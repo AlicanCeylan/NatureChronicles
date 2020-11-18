@@ -23,15 +23,18 @@
                     <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navBarMenu"></span>
                 </button>
 
-                <a class="navbar-brand m-auto">Nature Chronicles</a>
+                <a class="navbar-brand m-auto" asp-area="" asp-controller="Home" asp-action="Index">Nature Chronicles</a>
 
                 <div class="collapse navbar-collapse" id="navBarMenu">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link">Home</a>
+                            <a class="nav-link
+                               @(controller == "Home" && action == "Index" ? "active" : "")"
+                               asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Logs</a>
+                            <a class="nav-link @(controller == "Logs" && action == "LogHome" ? "active" : "")"
+                               asp-controller="Logs" asp-action="LogHome">Logs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">account</a>
